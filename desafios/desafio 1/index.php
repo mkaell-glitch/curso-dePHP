@@ -13,7 +13,7 @@
     <main>
         <h1>resultado final</h1>
         <?php 
-            $num = $_GET ["num"];
+            $num = $_REQUEST ["num"] ?? 0;
             $antecessor = $num - 1;
             $sucessor = $num + 1;
             echo "<p>o antecessor de $num é $antecessor.</p>";
